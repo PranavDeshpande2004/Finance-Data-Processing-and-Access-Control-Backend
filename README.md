@@ -1,7 +1,7 @@
 # Finance Dashboard Backend
+## 📌 Overview
 
-A role-based finance management system built with Spring Boot and MySQL.
-Users can track income and expenses, view dashboard analytics, and manage financial records — all protected by JWT authentication and role-based access control.
+A secure and scalable finance management backend built with Spring Boot. It provides role-based access control (Admin, Analyst, Viewer), JWT authentication, transaction management, and real-time dashboard analytics, designed for high performance and easy frontend integration.
 
 ---
 
