@@ -5,7 +5,7 @@ Users can track income and expenses, view dashboard analytics, and manage financ
 
 ---
 
-## Tech Stack
+## 📌Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -18,7 +18,7 @@ Users can track income and expenses, view dashboard analytics, and manage financ
 
 ---
 
-## Roles
+## 📌Roles
 
 | Role | What they can do |
 |---|---|
@@ -30,7 +30,19 @@ Users can track income and expenses, view dashboard analytics, and manage financ
 
 ---
 
-## Quick Start
+## 📌 Features
+
+- JWT-based authentication
+- Role-based access control (Admin, Analyst, Viewer)
+- Transaction management with filters & pagination
+- Dashboard analytics (summary, trends, breakdown)
+- Soft delete support
+- Rate limiting using Bucket4j
+- Swagger API documentation
+
+---
+
+## 📌Quick Start
 
 ### 1. Prerequisites
 
@@ -88,7 +100,7 @@ Click **Authorize**, paste your JWT token, and test all endpoints.
 
 ---
 
-## API Endpoints
+## 📌API Endpoints
 
 ### Auth — Public
 
@@ -133,7 +145,7 @@ Click **Authorize**, paste your JWT token, and test all endpoints.
 
 ---
 
-## Transaction Filters
+## 📌Transaction Filters
 
 The `GET /api/transactions` endpoint supports these query parameters:
 
@@ -148,7 +160,7 @@ The `GET /api/transactions` endpoint supports these query parameters:
 
 ---
 
-## How Authentication Works
+## 📌How Authentication Works
 
 ```
 Register → JWT issued (role = VIEWER)
@@ -163,7 +175,7 @@ Role changes take effect on the next request — no re-login needed.
 
 ---
 
-## Database Schema
+## 📌Database Schema
 
 ```
 users
@@ -178,7 +190,7 @@ transactions
 
 ---
 
-## Security
+## 📌Security
 
 | Check | Behavior |
 |---|---|
@@ -192,7 +204,7 @@ Rate limit: **20 requests per minute per user**
 
 ---
 
-## Running Tests
+## 📌Running Tests
 
 ```bash
 mvn test
@@ -202,7 +214,7 @@ mvn test
 
 ---
 
-## Project Structure
+## 📌Project Structure
 
 ```
 src/main/java/com/finance/
@@ -219,7 +231,7 @@ src/main/java/com/finance/
 
 ---
 
-## Assumptions
+## 📌Assumptions
 
 - Every new user is a Viewer — role assignment is Admin-only to prevent privilege escalation
 - Transactions are never hard deleted — soft delete preserves audit history
