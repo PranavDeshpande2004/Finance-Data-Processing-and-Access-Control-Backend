@@ -36,6 +36,15 @@ A secure and scalable finance management backend built with Spring Boot. It prov
 
 ---
 
+## 📌 User Role Flow
+
+- New users are assigned the **Viewer** role by default (read-only access).
+- The first **Admin** is created manually (see Quick Start).
+- Only **Admin** can update roles (Viewer → Analyst).
+- **Analyst** can access transactions; **Admin** has full control.
+
+---
+
 ## 📌 Features
 
 - JWT-based authentication
