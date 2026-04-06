@@ -5,6 +5,12 @@ A secure and scalable finance management backend built with Spring Boot. It prov
 
 ---
 
+
+📌 **Documentation:**  
+👉 [View Full Documentation](https://docs.google.com/document/d/1xOUcKIhy5qUBlKB5-gitQgasApymAc_k/view)
+
+---
+
 ## 📌Tech Stack
 
 | Layer | Technology |
